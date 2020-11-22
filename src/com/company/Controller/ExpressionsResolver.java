@@ -40,7 +40,7 @@ public class ExpressionsResolver {
 
         System.out.println(result);
     }
-
+//qwe
     private Block toMultiplyBlock(Block block) {
         if (block.isMultiplication())
             return block;
