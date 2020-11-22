@@ -7,7 +7,7 @@ import com.company.Model.Variable;
 
 import java.util.*;
 
-
+//tested git pull request
 public class ExpressionsResolver {
 
     private Set<Expression> expressions;
@@ -24,7 +24,7 @@ public class ExpressionsResolver {
         Expression expression;
         Block block;
         Double singleResult;
-
+//one more test hehe
         while (itExpression.hasNext()) {
             expression = itExpression.next();
             block = expression.getLeftBlock();
@@ -32,7 +32,7 @@ public class ExpressionsResolver {
             while (var.hasNext()) {
                 Variable variable = var.next();
                 singleResult = (result.get(variable) == null) ? 0D : result.get(variable);
-
+//jejejjejejeje
                 singleResult += expression.getCofitient() * variable.getValue() * variable.getPower();
                 result.put(variable, singleResult);
             }
@@ -40,7 +40,7 @@ public class ExpressionsResolver {
 
         System.out.println(result);
     }
-
+//qwe
     private Block toMultiplyBlock(Block block) {
         if (block.isMultiplication())
             return block;
